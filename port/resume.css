@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+    min-height: 100vh;
+  }
+  
+  /* Navbar */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    text-align: center;
+    z-index: 10;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  /* Resume Section */
+  .resume-section {
+    padding: 100px 20px 20px; /* Adjust for fixed navbar */
+    text-align: center;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .resume-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  /* Resume Viewer */
+  .resume-container {
+    width: 80%;
+    max-width: 900px;
+    height: 500px;
+    border: 2px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  .resume-viewer {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  /* Download Button */
+  .download-btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .download-btn a:hover {
+    background: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .resume-section h1 {
+      font-size: 2rem;
+    }
+  
+    .resume-container {
+      height: 400px;
+    }
+  
+    .download-btn a {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  }
+  
